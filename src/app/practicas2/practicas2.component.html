@@ -1,0 +1,55 @@
+<p>Prácticas</p>
+
+<!--Mostrar un texto en pantalla-->
+Ejercicio 1. {{texto}}
+
+<br>
+
+<!--Concatenar 2 textos en pantalla-->
+Ejercicio 2. {{ncompleto}}
+
+<br>
+
+<!--Sumar 2 números y mostrar el resultado-->
+Ejercicio 3. La suma de los 2 números es: {{suma}}
+
+<br>
+
+<!--Multiplicar 2 números y mostrar el resultado-->
+Ejercicio 4. La multiplicación de los 2 números es: {{multip}}
+
+<br>
+
+Ejercicio 5. Agregar datos a un arreglo
+<input type="text" [(ngModel)]="alumno">
+<button (click)="agregar()">Agregar</button>
+
+<br>
+
+Ejercicio 1. Selección de género
+
+<br>
+
+<select type="text" [(ngModel)]="genero" (change)="seleccionar()">
+    <option>Hombre</option>
+    <option>Mujer</option>
+</select>
+
+<br>
+
+{{mensaje}}
+
+<br>
+
+Ejercicio 2. Rango de calificaciones
+
+<br>
+Captura tu calificación (0-100):
+<input type="number" [(ngModel)]="calificacion">
+<button (click)="enviar()">Enviar</button>
+
+<br>
+
+<h1 class="color">{{estatus}}</h1>
+
+

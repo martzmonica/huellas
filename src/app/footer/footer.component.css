@@ -1,0 +1,15 @@
+div{
+    text-align: center;
+    font-family: 'Pangolin';
+    font-weight: bold;
+    font-size: 14px;
+    padding: 15px;
+}
+
+.texto1{
+    color: rgb(90, 211, 74);
+}
+
+.texto2{
+    color: orangered;
+}

@@ -1,0 +1,43 @@
+<form>
+    <br>
+    <table>
+        <img src="../../assets/imagenes/logo_white.png">
+    </table>
+    <br>
+    <div>
+        <!--PRIMER CAMPO-->
+        <label>
+            Nombre
+        </label>
+        <br>
+        <input type="text" placeholder="Escribe tu nombre.">
+        <br><br>
+        <!--SEGUNDO CAMPO-->
+        <label>
+            Correo electrónico:
+        </label>
+        <br>
+        <input type="email" placeholder="Escribe tu correo.">
+        <br><br>
+        <!--TERCER CAMPO-->
+        <label>
+            Contraseña:
+        </label>
+        <br>
+        <input type="password" placeholder="Debe contener 8 caracteres.">
+        <br><br>
+        <!--CUARTO CAMPO-->
+        <label>
+            Confirma tu contraseña:
+        </label>
+        <br>
+        <input type="password" placeholder="Debe contener 8 caracteres.">
+        <br><br>
+        <!--BOTON-->
+        <button>Registrarme <i class="fas fa-sign-in-alt"></i></button>
+        <br><br>
+        <a [routerLink]="['../sesion']">
+            ¿Ya tienes cuenta? ¡Inicia Sesión!
+        </a>
+    </div>
+</form>

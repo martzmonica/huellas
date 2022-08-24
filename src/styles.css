@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: 'Indie';
+    src: url(../src/assets/fuentes/Indie_Flower/IndieFlower-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Pangolin';
+    src: url(../src/assets/fuentes/Pangolin/Pangolin-Regular.ttf)
+}
+
+@font-face {
+    font-family: 'Concert';
+    src: url(../src/assets/fuentes/Concert_One/ConcertOne-Regular.ttf);
+}
+

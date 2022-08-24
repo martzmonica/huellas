@@ -1,0 +1,21 @@
+<header class="fondo">
+    <table> <!--ESTA ES UNA TABLA-->
+        <tr> <!--ESTA ES UNA FILA-->
+            <td class="columnaizquierda"> <!--ESTA ES UNA COLUMNA-->
+                <!--ESTE ES EL LOGOTIPO DE LA APP-->
+                <img class="logo" src="../../assets/imagenes/logo.png">
+            </td>
+            <td class="columnaderecha">
+                <a [routerLink]="['sesion']">
+                    <i class="fas fa-user-circle"></i> Iniciar Sesión
+                </a>
+                <a href="https://api.whatsapp.com/send?phone=528671234567" target="_blank">
+                    <i class="fas fa-comment-dots"></i> Contacto
+                </a>
+                <a [routerLink]="['practicas']">
+                    <i class="fas fa-chalkboard"></i> Prácticas
+                </a>
+            </td>
+        </tr>
+    </table>
+</header>

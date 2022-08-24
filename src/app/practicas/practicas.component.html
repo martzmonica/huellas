@@ -1,0 +1,52 @@
+<!--Mostrar un texto en pantalla-->
+Ejercicio 1. {{texto}}
+
+<br>
+
+<!-- Mostrar 2 textos concatenados -->
+Ejercicio 2. {{nombrecomp}} 
+
+<br>
+
+{{nombre}} {{apellidos}}
+
+<br>
+
+<!-- Sumar 2 números y mostrar el resultado -->
+Ejercicio 3. La suma de {{numero1}} y {{numero2}} es {{suma}}
+
+<br>
+
+<!-- Multiplicar 2 números y mostrar el resultado -->
+Ejercicio 4. La multiplicación de {{numero1}} y {{numero2}} es {{multip}}
+
+<br>
+
+<!-- Agregar datos a un arreglo -->
+<label>Ejercicio 5. Nombre del alumnno</label>
+<input type="text" [(ngModel)]="alumno">
+<button (click)="agregar()">Agregar</button>
+
+<br>
+
+<label>Ejercicio 6. ¿Cuál es tu género?</label>
+<br>
+<select type="text" [(ngModel)]="genero" (change)="enviar()">
+    <option>Mujer</option>
+    <option>Hombre</option>
+</select>
+
+<br>
+
+<label>¿Cuál es tu calificación?</label>
+<input type="number" [(ngModel)]="calificacion">
+<button (click)="generar()">Generar</button>
+
+<br>
+<label>Nombre del alumno:</label>
+<input type="text" [(ngModel)]="nalumno">
+<button (click)="introducir()">Introducir</button>
+<div *ngFor="let nalumno of nalumnos">
+    {{nalumno}}
+</div>
+

@@ -1,0 +1,38 @@
+/*CLASE LOGOTIPO*/
+.logo{
+    width: 70px; /*ancho en pixeles*/
+    height: auto; /*altura en pixeles*/
+}
+
+/*CLASE TABLA*/
+table{
+    width: 100%; /*ancho en porcentaje*/
+}
+
+/*CLASE COLUMNAS*/
+.columnaizquierda{
+    float: left; /*posicionamiento a la izquierda*/  
+    padding-top: 5px; /*espacio arriba*/
+    padding-left: 10px; /*espacio a la izquierda*/
+}
+
+.columnaderecha{
+    float: right; /*posicionamiento a la derecha*/
+    padding: 12px; /*espacio en los 4 lados*/
+}
+
+/*CLASE ENLACES*/
+a{
+    font-weight: bold; /*negritas*/
+    font-size: 10px; /*tamaño*/
+    text-align: right; /*alineación*/
+    text-transform: none; /*mayus/minus*/
+    color: rgb(1, 128, 151); /*color del texto*/
+    text-decoration:none; 
+    font-family: 'Pangolin';
+}
+
+/*CLASE FONDO*/
+.fondo{
+    background-color: #CAFFF9; /*color de fondo*/
+}

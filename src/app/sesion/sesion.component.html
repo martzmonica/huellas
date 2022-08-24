@@ -1,0 +1,33 @@
+<form>
+    <br>
+    <table>
+        <img src="../../assets/imagenes/logo_white.png">
+    </table>
+    <br>
+    <div>
+        <!--PRIMER CAMPO-->
+        <label>
+            Correo electrónico:
+        </label>
+        <br>
+        <input type="email" placeholder="Escribe tu correo.">
+        <br><br>
+        <!--SEGUNDO CAMPO-->
+        <label>
+            Contraseña:
+        </label>
+        <br>
+        <input type="password" placeholder="Debe contener 8 caracteres.">
+        <br>
+        <a href="">
+            ¿Olvidaste tu Contraseña?
+        </a>
+        <br><br>
+        <!--BOTON-->
+        <button>Ingresar <i class="fas fa-sign-in-alt"></i></button>
+        <br><br>
+        <a [routerLink]="['../registro']">
+            ¿No tienes cuenta? ¡Regístrate!
+        </a>
+    </div>
+</form>

@@ -1,0 +1,14 @@
+{
+  "projects": {
+    "default": "huellasnld"
+  },
+  "targets": {
+    "huellasnld": {
+      "hosting": {
+        "myapp": [
+          "huellasnld"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,66 @@
+<!--CARRUSEL DE IMAGENES-->
+<owl-carousel  
+    [options]="{ items: 1, nav:false, dots: true}"
+    [carouselClasses]="['owl-theme']">
+    <div *ngFor="let imagen of imagenes">
+        <img src="{{imagen}}">
+    </div>
+</owl-carousel>
+
+<!--LISTA DINAMICA 1-->
+<br>
+<a [routerLink]="['../adoptame']" class="encabezado"><span> Mascotas en Adopción <i class="fas fa-paw"></i></span></a> 
+<hr class="linea">
+<div class="fondo">
+    <owl-carousel
+        [options]="{ items: 2, dots: false, margin:10, loop:false, stagePadding:25, responsive: { }}"
+        [carouselClasses]="['owl-theme']">
+        <div *ngFor="let imagen2 of imagenes2" class="espacio">
+            <img class="imagenes" src="{{imagen2.imagen}}">
+            <a href="" class="enlace">{{imagen2.titulo}}</a>
+        </div>
+    </owl-carousel>
+</div>
+
+<!--LISTA DINAMICA 2-->
+<br>
+<a [routerLink]="['../reportame']" class="encabezado2"><span> Mascotas Extraviadas <i class="fas fa-bullhorn"></i></span></a>
+<hr class="linea2">
+<div class="fondo2">
+    <owl-carousel
+        [options]="{ items: 3, dots: false, margin:10, loop:false, stagePadding:25, responsive: { }}"
+        [carouselClasses]="['owl-theme']">
+        <div *ngFor="let imagen3 of imagenes3" class="espacio">
+            <img class="imagenes" src="{{imagen3}}">
+            <a href="" class="enlace2">¡Reportar!</a>
+        </div>
+    </owl-carousel>
+</div>
+
+<!--LISTA DINAMICA 3-->
+<br>
+<a [routerLink]="['../eventos']" class="encabezado4"><span> Eventos <i class="fas fa-calendar-alt"></i></span></a>
+<hr class="linea4">
+<div class="fondo4">
+    <owl-carousel
+        [options]="{ items: 1, dots: false, margin:20, loop:false, responsive: { }}"
+        [carouselClasses]="['owl-theme']">
+        <div *ngFor="let evento of eventos" class="espacio">
+                <img class="imagenes" src="{{evento}}">
+            </div>
+    </owl-carousel>
+</div>
+
+<!--LISTA DINAMICA 4-->
+<br>
+<a [routerLink]="['../veterinarias']" class="encabezado3"><span> Veterinarias <i class="fas fa-hospital"></i></span></a>
+<hr class="linea3">
+<div class="fondo3">
+    <owl-carousel
+        [options]="{ items: 2, dots: false, loop:false, responsive: { }}"
+        [carouselClasses]="['owl-theme']">
+        <div *ngFor="let veterinaria of veterinarias">
+            <label class="texto">{{veterinaria}}</label><br>
+        </div>
+    </owl-carousel>
+</div>

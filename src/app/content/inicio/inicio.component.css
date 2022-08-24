@@ -1,0 +1,100 @@
+.espacio{
+    margin-top: -15px;
+}
+
+.encabezado{
+    font-weight: bold;
+    font-family: 'Pangolin';
+    font-size: 13px;
+    color: rgb(207, 73, 49);
+    text-decoration: none;
+}
+
+.encabezado2{
+    font-weight: bold;
+    font-family: 'Pangolin';
+    font-size: 13px;
+    color: rgb(49, 162, 207);
+    text-decoration: none;
+}
+
+.encabezado3{
+    font-weight: bold;
+    font-family: 'Pangolin';
+    font-size: 13px;
+    color: rgb(76, 33, 146);
+    text-decoration: none;
+}
+
+.encabezado4{
+    font-weight: bold;
+    font-family: 'Pangolin';
+    font-size: 13px;
+    color: rgb(19, 185, 108);
+    text-decoration: none;
+}
+
+.imagenes{
+    border-radius: 8px;
+}
+
+.imagenes:hover{
+    opacity: 0.6;
+    transform: scaleX(-1);
+}
+
+.enlace{
+    color: rgb(207, 73, 49);
+    font-weight: bold;
+    font-family: 'Pangolin';
+    text-decoration: none;
+    font-size: 12px;
+    padding-left: 45px;
+}
+
+.enlace2{
+    color: rgb(49, 162, 207);
+    font-weight: bold;
+    font-family: 'Pangolin';
+    text-decoration: none;
+    font-size: 12px;
+    padding-left: 25px;
+}
+
+.linea{
+    border-top: 2px dashed rgb(207, 73, 49);
+}
+
+.linea2{
+    border-top: 2px dashed rgb(49, 197, 207);
+}
+
+.linea3{
+    border-top: 2px dashed rgb(76, 33, 146);
+}
+
+.linea4{
+    border-top: 2px dashed rgb(19, 185, 108);
+}
+
+.fondo{
+    background-image: linear-gradient( 44.8deg,  rgba(250, 161, 136, 0.67) -53.1%, rgba(247, 232, 196, 0.28) 49% );
+    padding-bottom: 5px;
+}
+
+.fondo2{
+    background-image: linear-gradient( 44.8deg,  rgba(136, 237, 250, 0.67) -53.1%, rgba(196, 247, 243, 0.28) 49% );
+    padding-bottom: 5px;
+}
+
+.fondo3{
+    background-image: linear-gradient( 44.8deg,  rgba(138, 136, 250, 0.67) -53.1%, rgba(207, 196, 247, 0.28) 49% );
+    padding-bottom: 5px;
+}
+
+.texto{
+    font-family: 'Pangolin';
+    font-weight: bold;
+    font-size: 14px;
+    color: rgb(32, 26, 90);
+}

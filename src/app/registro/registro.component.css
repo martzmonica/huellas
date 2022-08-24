@@ -1,0 +1,31 @@
+table{
+    width: 100%;
+    text-align: center;
+}
+
+img{
+    width: 135px;
+}
+
+label{
+    font-family: 'Pangolin';
+    font-size: 13px;
+}
+
+div{
+    text-align: center;
+}
+
+a{
+    font-size: 12px;
+    font-family: cursive;
+}
+
+button{
+    background-color: rgb(48, 46, 46);
+    color: rgb(0, 247, 255);
+    border-radius: 5px;
+    border: 0px solid;
+    font-family: 'Pangolin';
+    padding: 5px;
+}

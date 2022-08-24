@@ -1,0 +1,123 @@
+<div>
+  <h2>Alumnos Destacados</h2>
+  <form>
+    <label>Nombre del alumno:</label>
+    <br>
+    <input type="text" [(ngModel)]="form2.nalumno" name="nalumno">
+    <br>
+    <label>Calificación:</label>
+    <br>
+    <input type="number" [(ngModel)]="form2.ncalificacion" name="nalumno">
+    <div class="boton">
+      <button class="btn btn-primary" (click)="introducir()">Agregar</button>
+    </div>
+  </form>
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Calificación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let registro2 of registros2">
+        <td>{{registro2.nalumno}}</td>
+        <td>{{registro2.ncalificacion}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <label>Total de alumnos: {{total}}</label>
+</div>
+<div class="margen">
+  <div class="container">
+    <div class="row">
+      <!-- <div class="col-4">
+        <label>Ordenar por:</label>
+      </div>
+      <div class="col-5">
+        <select type="text" name="orden" [(ngModel)]="orden" (change)="ordenar()" class="form-select form-select-sm">
+          <option value="nombre">Nombre</option>
+          <option value="raza">Raza</option>
+        </select>
+      </div> -->
+      <!-- <div class="col-3">
+        <div class="boton">
+          <button type="button" class="btn btn-info btn-sm" data-bs-toggle="modal" 
+          data-bs-target="#exampleModal" (click)="agregar()">Agregar</button>
+        </div>
+      </div> -->
+    </div>
+    <!-- <div class="row">
+      <div class="col-4">
+        <label>Razas:</label>
+      </div>
+      <div class="col-5">
+        <select type="text" name="filtro" [(ngModel)]="filtro" (change)="filtrar()" class="form-select form-select-sm">
+          <option value="French">French</option>
+          <option value="Maltés">Maltés</option>
+          <option value="Pug">Pug</option>
+        </select>
+      </div>
+    </div> -->
+  </div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel" *ngIf="proceso_agregar">Agregar Adopción</h5>
+          <h5 class="modal-title" id="exampleModalLabel" *ngIf="proceso_editar">Editar Adopción</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Nombre de la mascota:</label>
+              <input type="text" [(ngModel)]="form.nombre" name="nombre" class="form-control" id="recipient-name">
+            </div>
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Raza:</label>
+              <select type="text" name="raza" [(ngModel)]="form.raza" class="form-select form-select-sm">
+                <option value="French">French</option>
+                <option value="Maltés">Maltés</option>
+                <option value="Pug">Pug</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Descripción:</label>
+              <textarea [(ngModel)]="form.descripcion" name="descripcion" class="form-control" id="message-text"></textarea>
+            </div>
+            <div>
+              <input type="file" accept="image/*" (change)="almacenar($event)">
+              <img src="{{url}}">
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+          <button type="button" class="btn btn-info" (click)="publicar()" *ngIf="proceso_agregar">Publicar</button>
+          <button type="button" class="btn btn-info" (click)="actualizar()" *ngIf="proceso_editar">Actualizar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="busqueda">
+    <label>Buscar:</label>&nbsp;<input type="text">&nbsp;<i class="fas fa-search"></i>
+</div> -->
+
+<table>
+    <tr *ngFor="let registro of registros">
+        <td class="columna1">
+            <img src="{{registro.url}}">
+        </td>
+        <td class="columna2">
+            <span class="titulo">{{registro.nombre}}</span><br>
+            <span class="descripcion">{{registro.descripcion}}</span><br>
+            <span class="raza">Raza: <b>{{registro.raza}}</b></span>
+            <!-- <br>
+            <a [routerLink]="" (click)="editar(registro)" data-bs-toggle="modal" data-bs-target="#exampleModal">Editar</a> -->
+            <!-- <i class="fas fa-trash icono" (click)="eliminar(registro)"></i> -->
+        </td>
+    </tr>
+</table>
